@@ -6,18 +6,36 @@
 //
 
 import SwiftUI
-import RealityKit
-import RealityKitContent
+import QuickLook
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Model3D(named: "Scene", bundle: realityKitContentBundle)
-                .padding(.bottom, 50)
 
-            Text("Hello, world!")
+    @State var previewURL: URL?
+    @State var dragAndDropURL: URL?
+    
+    var body: some View {
+        VStack(spacing: 60) {
+            Text("Drag & Drop")
+            .font(.extraLargeTitle2)
+                .padding()
+                .background(.red)
+                .cornerRadius(10)
+                .hoverEffect()
+                .onDrag {
+                    dragAndDropURL = Bundle.main.url(forResource: "hab_en", withExtension: "reality")!
+                    return NSItemProvider(contentsOf: dragAndDropURL) ?? NSItemProvider()
+                }
+            
+            Button(action: {
+                previewURL = Bundle.main.url(forResource: "pancakes", withExtension: "usdz")!
+            }) {
+                Text("Preview")
+                    .font(.extraLargeTitle2)
+                    .padding()
+                    .cornerRadius(10)
+            }
         }
-        .padding()
+        .quickLookPreview($previewURL)
     }
 }
 

@@ -13,6 +13,8 @@
 		1A9764CB2BEDBE2700D4A4E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A9764CA2BEDBE2700D4A4E4 /* Assets.xcassets */; };
 		1A9764CE2BEDBE2700D4A4E4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A9764CD2BEDBE2700D4A4E4 /* Preview Assets.xcassets */; };
 		1A9764D92BEDBE2700D4A4E4 /* VisionOSQuickLookSample01Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9764D82BEDBE2700D4A4E4 /* VisionOSQuickLookSample01Tests.swift */; };
+		1A9764E32BEE11CA00D4A4E4 /* pancakes.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 1A9764E22BEE11CA00D4A4E4 /* pancakes.usdz */; };
+		1A9764E72BEE206800D4A4E4 /* hab_en.reality in Resources */ = {isa = PBXBuildFile; fileRef = 1A9764E62BEE206800D4A4E4 /* hab_en.reality */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,8 @@
 		1A9764CF2BEDBE2700D4A4E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A9764D42BEDBE2700D4A4E4 /* VisionOSQuickLookSample01Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VisionOSQuickLookSample01Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A9764D82BEDBE2700D4A4E4 /* VisionOSQuickLookSample01Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionOSQuickLookSample01Tests.swift; sourceTree = "<group>"; };
+		1A9764E22BEE11CA00D4A4E4 /* pancakes.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = pancakes.usdz; sourceTree = "<group>"; };
+		1A9764E62BEE206800D4A4E4 /* hab_en.reality */ = {isa = PBXFileReference; lastKnownFileType = file; path = hab_en.reality; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,8 @@
 		1A9764C12BEDBE2600D4A4E4 /* VisionOSQuickLookSample01 */ = {
 			isa = PBXGroup;
 			children = (
+				1A9764E62BEE206800D4A4E4 /* hab_en.reality */,
+				1A9764E22BEE11CA00D4A4E4 /* pancakes.usdz */,
 				1A9764C62BEDBE2600D4A4E4 /* VisionOSQuickLookSample01App.swift */,
 				1A9764C82BEDBE2600D4A4E4 /* ContentView.swift */,
 				1A9764CA2BEDBE2700D4A4E4 /* Assets.xcassets */,
@@ -195,6 +201,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A9764E32BEE11CA00D4A4E4 /* pancakes.usdz in Resources */,
+				1A9764E72BEE206800D4A4E4 /* hab_en.reality in Resources */,
 				1A9764CE2BEDBE2700D4A4E4 /* Preview Assets.xcassets in Resources */,
 				1A9764CB2BEDBE2700D4A4E4 /* Assets.xcassets in Resources */,
 			);
@@ -380,6 +388,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 1.0;
 			};
 			name = Debug;
 		};
@@ -406,6 +415,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 1.0;
 			};
 			name = Release;
 		};
